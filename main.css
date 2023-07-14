@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: mrRobot;
+    src: url(MR\ ROBOT.ttf);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ccc;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+}
+header{
+    background-color: #222121e5;
+    color: red;
+    font-family: mrRobot;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+header h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 24px;
+}
+#about .container{
+    display: flex;
+}
+#about img{
+    margin-right: 16px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+#about p{
+    margin-bottom: 16px;
+}
+#about h2{
+    margin-bottom: 56px;
+}
+section h2{
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    font-size: 32px;
+    border-bottom: 3px solid red;
+}
+section{
+    margin-bottom: 56px;
+}
+#products img{
+    height: 200px;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 1px #000000;
+}
+.produtos h3, .produtos p{
+    padding: 8px 0;
+}
+#products{
+    align-items: center;
+}
+.produtos li{
+    list-style: none;
+}
+.produtos button{
+    display: block;
+    width: 90%;
+    padding: 8px 0;
+    cursor: pointer;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 8px;
+}
+#products h2{
+    margin-bottom: 56px;
+}
+.lista-prod{
+    display: grid;
+    grid-template-columns: repeat(4, 22.5%);
+    column-gap: 3%;
+}
+@media screen and (max-width:640px){
+    header .container{
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+    header{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    header h1{
+        margin-bottom: 8px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    #about .container{
+        display: block;
+    }
+    #about h2{
+        margin-bottom: 56px;
+    }
+    #about img{
+        max-width: 100%;
+    }
+    .lista-prod{
+        display: block;
+        text-align: center;
+    }
+    .produtos button{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (min-width:641px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+    #about .container{
+        display: block;
+    }
+    #about img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .lista-prod{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 3%;
+        row-gap: 5%;
+    }
+    .lista-prod li{
+        text-align: center;
+    }
+    .produtos button{
+        margin: 0 auto;
+        margin-top: 8px;
+        width: 50%;
+    }
+}
